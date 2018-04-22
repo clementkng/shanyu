@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "chinese";
+    src: url("font/CHINESETAKEAWAY.ttf") format("truetype");
+}
+
+#carousel-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	background-color: #B3B98D;
+	height: 600px;
+	width: 600px;
+	overflow: hidden;
+}
+
+#carousel-strip {
+	transition: 0.4s;
+	position: absolute;
+	left: 0;
+	display: flex;
+}
+
+.carousel-section {
+	height: 338px;
+	width: 600px;
+	position: relative;
+}
+
+.carousel-section img {
+	margin-top: 225px;
+	width: 600px;
+}
+
+.carousel-title {
+	width: 580px;
+	text-align: center;
+	font-family: "chinese";
+	font-size: 20px;
+	margin: 10px;
+}
+
+.carousel-text {
+	width: 590px;
+	font-size: 15px;
+	margin: 5px;
+}
+
+#left, #right {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 3;
+	padding: 20px;
+	font-size: 48px;
+	color: white;
+}
+
+#left {
+	left: calc(50% - 50vh);
+}
+
+#right {
+	right: calc(50% - 50vh);
+}
+
+#close {
+	color: white;
+	font: Roboto, sans-serif;
+  	position: absolute;
+	right: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	top: 20px;
+	z-index: 3;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+}
+
+body, html {
+	margin: 0 auto;
+	position: relative;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+.item {
+	height: 20vh;
+	width: 20vh;
+	margin-right: 5px;
+	margin-left: 5px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	opacity: 0.7;
+	overflow: hidden;
+}
+
+.row {
+	margin-top: 10vh;
+}
+
+.item:hover {
+	opacity: 1;
+	transition: 0.2s;
+
+}
+
+#content {
+	width: 80vw;
+	height: 100vh;
+	background: #C6E4FF;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header {
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0px;
+}
+
+#information {
+	/*Center the parent div, let these be relative*/
+/*	display: inline-block;*/
+    font-family: "chinese";
+    letter-spacing: 2.5px;
+	position: relative;
+	height: 8px;
+/*	margin: 25vw;
+	top: -25vw;*/
+}
+
+#title {
+	font-size: 50px;
+/*	display: inline-block;*/
+	margin-top: 25px;
+	text-align: center;
+}
+
+#text-section {
+/*	display: inline-block;*/
+	margin-top: 25px;
+/*	margin-left: 10px;*/
+	font-size: 20px;
+	text-align: center;
+}
+
+.row {
+	width: 100%;
+	height: 120px;
+	text-align: center;
+}
+
+.centered {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #C6E4FF;
+}
+
+#bottom-menu {
+    height: 10vh;
+    width: 100vw;
+    top: 80vh;
+    position: relative;
+    text-align: center;
+}
+
+img {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+html, body {
+	background: #fafafa;
+	font-family: 'Roboto', sans-serif;
+}
+
+#left-tab {
+    position: fixed;
+    display: absolute;
+    height: 100vh;
+    width: 10vw;
+    text-align: right;
+    top: 0;
+    left: 0;
+    color: #B3B98D;
+    background-image: url("../img/bannerarrows.gif");
+    z-index: 1;
+}
+
+#right-tab {
+    position: fixed;
+    display: absolute;
+    height: 100vh;
+    width: 10vw;
+    text-align: left;
+    top: 0;
+    right: 0;
+    color: #B3B98D;
+    background-image: url("../img/bannerarrowsright.gif");
+    z-index: 1;
+}
+
+#bottom-menu-sign {
+    height: 5vh;
+    width: 10vw;
+    top: 95vh;
+    left: 45vw;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #650604;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: #C6E4FF;
+    background-color: #650604;
+
+}
+
+#bottom-menu {
+    height: 17.5vh;
+    width: 10vw;
+    top: 82.5vh;
+    left: 45vw;
+    position: fixed;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #650604;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    color: #C6E4FF;
+    background-color: #650604;
+    display: none;
+}
